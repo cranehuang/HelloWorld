@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="50dp"
+     >
+
+    <!--     <ImageView 
+	        android:id="@+id/warning"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginRight="2dp"/> -->
+        <RelativeLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginTop="8dp"
+	        android:layout_marginBottom="8dp"
+	        android:layout_marginRight="2dp"
+	        android:background="@drawable/chatto_bg_selector">
+	        <RelativeLayout 
+	            android:id="@+id/date_and_progressBar"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        >
+	            <TextView 
+		            android:id="@+id/dateright"
+		            android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_centerVertical="true"
+			        android:textColor="@color/text_color_light"
+			        android:textSize="10sp"/>
+		        <ProgressBar
+				    android:id="@+id/send_sms_progressbar"
+				    android:layout_toRightOf="@id/dateright"
+				    android:layout_marginLeft="8dp"
+				    style="@android:style/Widget.ProgressBar.Small.Inverse"
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content"
+					android:layout_centerVertical="true"
+					android:visibility="gone"/>
+	        </RelativeLayout>
+	        
+	        
+	        <TextView 
+		        android:id="@+id/bodyright"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/text_color_deep"
+		        android:gravity="center_vertical"
+		        android:layout_below="@id/date_and_progressBar"
+		        android:layout_alignLeft="@id/dateright"
+		        />
+		
+	    </RelativeLayout>
+	    
+    
+</RelativeLayout>

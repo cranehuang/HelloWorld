@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="InlinedApi">
+        <ignore path="src/com/crane/helloworld/Conversation.java" />
+        <ignore path="src/com/crane/transaction/SmsReceiverService.java" />
+    </issue>
+</lint>
